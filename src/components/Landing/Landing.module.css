@@ -1,0 +1,47 @@
+.landingContainer {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--darkGray);
+  background-color: var(--lightBlue);
+}
+.landingContainer p {
+  width: 450px;
+}
+.searchBar {
+  margin: 2rem 0 1rem 0;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--darkGray);
+  border-radius: 25px;
+  width: 200px;
+  text-align: center;
+}
+.searchBar:focus {
+  outline: none;
+}
+.landingContainer form {
+  display: flex;
+  flex-direction: column;
+}
+.searchBtn {
+  border: none;
+  background-color: var(--red);
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  width: 120px;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.searchBtn:hover {
+  background-color: rgb(218, 76, 83);
+  color: var(--lightBlue)
+}
+.searchBtn:active {
+  background-color: rgb(206, 112, 117);
+  color: var(--lightBlue)
+}

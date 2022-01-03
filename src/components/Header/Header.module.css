@@ -1,0 +1,71 @@
+:root {
+  --darkGray: rgb(104, 105, 99);
+  --darkBlue: rgb(138, 162, 158);
+  --red: rgb(219, 84, 97);
+  --lightBlue: rgb(227, 242, 253);
+  --lightGray: rgb(250, 250, 250);
+}
+.navContainer {
+  width: 100%;
+  background-color: var(--darkGray);
+}
+.navigation {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+.navigation h1 {
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.navigation h1:hover {
+  transform: scale(1.1);
+}
+.navigation > ul {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+}
+.navigation li {
+  list-style-type: none;
+}
+.link {
+  text-decoration: none;
+  color: var(--lightGray);
+  transition: color 0.2s ease;
+}
+.link:hover {
+  color: var(--darkBlue);
+}
+.searchBar {
+  border: none;
+  padding: 0 1rem;
+  border-bottom: 1px solid var(--lightGray);
+  background-color: transparent;
+  color: var(--lightGray);
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+}
+.searchBar:focus {
+  outline: none;
+  opacity: 1;
+}
+.searchBtn {
+  background-color: transparent;
+  border: none;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  /* width: 20px;
+  height: 20px; */
+}
+.searchBtn:hover {
+  opacity: 1;
+  color: var(--lightGray);
+}

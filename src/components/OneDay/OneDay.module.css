@@ -1,0 +1,10 @@
+.oneDayContainer {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--darkGray);
+  background-color: var(--lightBlue);
+}
