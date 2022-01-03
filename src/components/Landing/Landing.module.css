@@ -5,20 +5,30 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: var(--darkGray);
+  color: rgb(34, 34, 34);
   background-color: var(--lightBlue);
+  background-image: url(../../assets/storm.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .landingContainer p {
+  font-weight: 500;
+  font-size: 20px;
   width: 450px;
 }
 .searchBar {
   margin: 2rem 0 1rem 0;
   background-color: transparent;
   padding: 0.5rem 1rem;
-  border: 1px solid var(--darkGray);
+  border: 1px solid white;
+  color: white;
   border-radius: 25px;
   width: 200px;
   text-align: center;
+  animation: pulse 2.5s infinite;
+}
+.searchBar::placeholder {
+  color: rgb(223, 223, 223);
 }
 .searchBar:focus {
   outline: none;
@@ -30,6 +40,7 @@
 .searchBtn {
   border: none;
   background-color: var(--red);
+  color: white;
   padding: 0.5rem 1rem;
   border-radius: 30px;
   width: 120px;
@@ -39,9 +50,20 @@
 }
 .searchBtn:hover {
   background-color: rgb(218, 76, 83);
-  color: var(--lightBlue)
+  color: var(--lightBlue);
 }
 .searchBtn:active {
   background-color: rgb(206, 112, 117);
-  color: var(--lightBlue)
+  color: var(--lightBlue);
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

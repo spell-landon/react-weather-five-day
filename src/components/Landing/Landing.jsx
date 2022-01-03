@@ -9,7 +9,7 @@ function Landing({ setOneData, setFiveData, handleSubmit, handleChange, searchSt
   }, []);
   return (
     <div className={styles.landingContainer}>
-      <h1>Welcome to 5Day weather!</h1>
+      <h1>Welcome <br></br>to 5Day weather!</h1>
       <p>
         Here you can check out the weather in any city with the option to see
         the forecast up to 5 days!
